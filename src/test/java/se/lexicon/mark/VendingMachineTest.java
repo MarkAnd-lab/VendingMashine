@@ -26,4 +26,16 @@ public class VendingMachineTest {
         //Act
         Assert.assertEquals(140, vendingMachine.getBalance());
     }
+
+    @Test
+    public void requestTest() {
+
+
+        vendingMachine.addCurrency(20);
+
+        int expected = 0;
+        Product actual = vendingMachine.request(1);
+        Assert.assertEquals("Pepsi", actual.getName());
+        Assert.assertEquals(expected, vendingMachine.getBalance());
+    }
 }
