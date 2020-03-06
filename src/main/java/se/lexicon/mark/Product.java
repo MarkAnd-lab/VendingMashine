@@ -5,7 +5,7 @@ public abstract class Product {
 
     //Drinks, Sweets, Food, Fruits
     private final int productNumber;
-    private double price;
+    private int price;
     private String name;
     private int calories;
     private String allergens;
@@ -24,7 +24,7 @@ public abstract class Product {
         return this.productNumber;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 

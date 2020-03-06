@@ -10,7 +10,7 @@ public interface VendingMachineInterface {
 
     String getDescription (int productNumber); // View a product description
 
-    double getBalance (); // Returns the deposit pool amount
+    int getBalance (); // Returns the deposit pool amount
 
     String [] getProducts (); // Returns all Products' names and product numbers
 

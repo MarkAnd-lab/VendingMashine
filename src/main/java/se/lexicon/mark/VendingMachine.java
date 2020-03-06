@@ -20,7 +20,7 @@ public class VendingMachine implements VendingMachineInterface{
     }
 
 
-    private double depositPool; // skapat en variabel "depositPool" där man lägger in pengarna.
+    private int depositPool; // skapat en variabel "depositPool" där man lägger in pengarna.
     public void addCurrency (int amount){  // Add to the deposit pool (moneyPool)
         if(amount > 0){
             setDepositPool(amount);
@@ -57,7 +57,7 @@ public class VendingMachine implements VendingMachineInterface{
 
 
     @Override
-    public double getBalance() { // Returns the deposit pool amount
+    public int getBalance() { // Returns the deposit pool amount
         return depositPool;
     }
 
@@ -75,7 +75,7 @@ public class VendingMachine implements VendingMachineInterface{
         return depositPool;
     }
 
-        public void setDepositPool(double depositPool) {
+        public void setDepositPool(int depositPool) {
         this.depositPool = depositPool;
     }
 

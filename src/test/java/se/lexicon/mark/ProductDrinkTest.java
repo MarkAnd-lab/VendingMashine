@@ -9,34 +9,17 @@ public class ProductDrinkTest {
     //Skapa en dryck med satta värden i ProduktDrinks, verifera att det är korrekt värde.
     //Skapa examine test och att metoden returnerar rätt medelande.
 
-    public class Drink_Test {
-
-        private Pepsi drinkTest;
-        private final int productNumber = 1;
-        private int price = 20;
-        private String name = "Pepsi";
-        private int calories = 100;
-        private String allergens = "Aspartam";
-        private int expected =
-    }
 
 
     @Test
     public void test_ProductDrinks(){
-
         //Arrange
-        Pepsi drinkTest;
-        final int productNumber = 1;
-        int price = 20;
-        String name = "Pepsi";
-        int calories = 100;
-        String allergens = "Aspartam";
-        int expected
+        ProductDrinks drinks = new ProductDrinks(1,20, "Pepsi", 100, "Aspartam");
 
         //Act
-        testProductDrinks = new ProductDrinks(productNumber, price, name, calories, allergens);
+        String expected = "Product price 20\nProduct number 1\nProduct name Pepsi\nProduct calories 100\nProduct allergens Aspartam";
 
         //Assert
-        Assert.assertEquals(expected name);
+        Assert.assertEquals(expected,  drinks.examine());
     }
 }
