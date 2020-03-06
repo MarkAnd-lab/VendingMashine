@@ -23,11 +23,13 @@ public class VendingMachine implements VendingMachineInterface{
     private int depositPool; // skapat en variabel "depositPool" där man lägger in pengarna.
     public void addCurrency (int amount){  // Add to the deposit pool (moneyPool)
         if(amount > 0){
-            setDepositPool(amount);
+            this.depositPool += amount;
+            //setDepositPool(amount);
             System.out.println("Add to the deposit pool " + amount);
 
             }else{
-            setDepositPool(0); // om något sätt in typ -100kr så sätts det till 0.
+            this.depositPool = 0;
+            //setDepositPool(0); // om något sätt in typ -100kr så sätts det till 0.
         }
 
 
