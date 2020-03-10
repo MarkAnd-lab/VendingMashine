@@ -73,7 +73,7 @@ public class VendingMachine implements VendingMachineInterface{
 
     }
 
-    public double getDepositPool() {
+    public int getDepositPool() {
         return depositPool;
     }
 
