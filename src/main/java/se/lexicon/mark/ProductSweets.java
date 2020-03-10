@@ -18,8 +18,6 @@ public class ProductSweets extends Product {
     @Override
     public String use() {
             String consume = "you eat Sweets";
-            //consume the product.
-            // String info
             return consume;
     }
 

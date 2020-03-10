@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ProductDrinkTest {
     //Skapa en dryck med satta värden i ProduktDrinks, verifera att det är korrekt värde.
-    //Skapa examine test och att metoden returnerar rätt medelande.
+    //Skapa examine test och att metoden returnerar rätt meddelande.
 
 
 
